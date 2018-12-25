@@ -70,7 +70,7 @@ JavaScript engine
 
 DOM selectors:
 1. getElementsByTagName
-   documenht.getElementsByTagName("")
+   document.getElementsByTagName("")
 2. getElementsById -> only one 
 3. getElementsByClassName -> returns an array -> use [index] after
 
@@ -99,4 +99,45 @@ parentElement
 children
 
 It is important to cache selectors in variables!!! -> store in a variable!
-      
+
+Add <script type="text/javascript" src="script.js"></script> at the end of body
+
+// getElementsByTagName returns an array of elements
+var button = document.getElementsByTagName("button")[0];
+button.addEventListener("click", function() {
+  console.log("click!");
+}
+event listener: mouseenter, mouseleave...etc
+
+Create an element:
+  var li = document.createElement("li");
+
+Create a text node:
+  li.appendChild(document.createTextNode(input.value);
+
+Attach:
+  ul.appendChild(li);
+
+JavaScript Char Codes (key codes): https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+Event Reference: https://developer.mozilla.org/en-US/docs/Web/Events
+
+Callback function:
+  input.addEventListener("keypress", addListAfterKeyPress)
+  addListAfterKeyPress is a callback function. When the key is pressed, the function automatically gets called. 
+  
+  
+Ternary operator:
+  eval ? option1 : option 2;
+  
+  Equivalent to:
+  if (eval)
+  {
+    return option1;
+  }
+  else
+  {
+    return option2;
+  }
+  
+  
+  
