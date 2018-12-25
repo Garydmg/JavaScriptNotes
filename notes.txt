@@ -140,4 +140,65 @@ Ternary operator:
   }
   
   
+ES6: ECMAScript6 === standard of JavaScript
+BABEL: online JavaScript compiler. Transform new syntax to the one all browsers support. 
+  
+let/const (ECMAScript6)
+  - let: any time is wrapped around a curly bracket, a new scope is created (DO NOT USE VAR)
+  - const: not allowed to reassign (changing property is allowed for object)
+  
+Template strings:
+  ` ${varName} ${varName-10} `
+  
+Default arguments (when parameters are not provided):
+    function(name = "", var1 = 10, var2 = "hi") { return }
+  
+Symbol:
+    let sym1 = Symbol();
+    let sym2 = Symbol('foo');
+    let sym3 = Symbol('foo');
+    sym2 === sym3: false
+ 
+Arrow functions:
+    function add(a, b) {
+      return a + b;
+    }
+    
+    equivalent to:  
+      const add = (a, b) => a + b;  // when there is only a single return 
+===================================
+Closures: 
+A function ran, the function excecuted. 
+It's never going to execute again, but it's going to remember that there are references to those variables.
+So the child scope always has access to the parent scope. 
+
+const first = () => {
+  const greet = "Hi";
+  const second = () => {
+    alert(greet);
+  }
+  return second;
+}
+
+const newFunc = first();
+newFunc();  // Hi
+===================================
+Currying:
+Changing function to accept parameters one at a time. 
+
+const multiply = (a, b) => a * b;
+const curriedMultiply = (a) => (b) => a * b;
+curriedMultiply(3)(4);
+
+const multiplyBy5 = curriedMultiply(5);
+multiplyBy5(10); // 50
+===================================
+Compose:
+const compose = (f, g) => (a) => f(g(a));
+- f and g are functions
+
+const sum = (num) => num + 1;
+compose(sum, sum)(5);  // 7
+
+
   
