@@ -1,1 +1,21 @@
+Variable Types:
+1. Number 
+  NaN: not a number
+2. String
+  10 + "34" -> "1034"
+  10 - "3" -> 7
+3. Boolean
+  3 === 3 -> true (same type and value)
+4. Undefined
+  Variable has not been assigned 
+5. Null
+6. Symbol
+7. Object
 
+var storedVal = prompt("Prompt phrase: "); -> will store as a string
+Cast a string to number: Number(storedVal)
+
+Anonymous function:
+var hello = function() {
+  console.log("Hi");
+}
