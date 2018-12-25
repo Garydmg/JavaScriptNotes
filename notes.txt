@@ -9,13 +9,55 @@ Variable Types:
 4. Undefined
   Variable has not been assigned 
 5. Null
-6. Symbol
+  Nothing in the object
+6. Symbol (new in ECMAScript 6)
 7. Object
 
 var storedVal = prompt("Prompt phrase: "); -> will store as a string
 Cast a string to number: Number(storedVal)
 
+let varName (let: new in ECMAScript 6)
+
 Anonymous function:
 var hello = function() {
   console.log("Hi");
 }
+
+More info in: w3c array methods
+  ary.shift(): remove front
+  ary.pop(): remove back
+  ary.push(): append 
+  ary.concat([1, 2, 3]);
+  ary.sort();
+  ary.length
+  
+Object: collection of properties {} -> like a struct
+  access to a property: obj.property;
+  add a new property: obj.addProperty = "newProperty";
+  function inside an object: method
+  var obj = {
+    methodA: function() {
+    }
+  };
+  obj.methodA()
+
+A list of objects
+  [{},{},...]
+  listObj[index].property
+
+forEach usage:
+ary.forEach(function(value) {
+  console.log(value);
+}
+===================================
+ary.forEach(function(value, index) {
+  console.log(value, index);
+}
+===================================
+function functionName(value, index) {
+  console.log(value, index);
+}
+
+ary.forEach(functionName);
+
+
