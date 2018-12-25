@@ -60,4 +60,43 @@ function functionName(value, index) {
 
 ary.forEach(functionName);
 
+DOM: Document Object Model (document)
+- what browser creates to allow us to modify HTML and CSS
+- document is just an object (its parent object is window)
+- window.alert("hello")
+- document.write("hello") (window.write("hello") would not work)
 
+JavaScript engine
+
+DOM selectors:
+1. getElementsByTagName
+   documenht.getElementsByTagName("")
+2. getElementsById -> only one 
+3. getElementsByClassName -> returns an array -> use [index] after
+
+===================================
+RECOMMENDED
+4. document.querySelector(" ") -> select first item
+   document.querySelectorAll(" ") -> select all items
+===================================
+5. document.querySelector("li").getAttribute("name")
+6. document.querySelector("li").setAttribute("name", "value")
+
+Change styles:
+   document.querySelector("h1").style.property = ""; 
+   Alternatively:
+      1. className
+        var h1 = document.querySelector("h1");
+        h1.className = "assignedClassName";
+      2. classList
+        document.querySelector("li").classList;
+        method contains: add/remove/toggle (on, off)
+
+innerHTML (kinda dangerous)
+  document.querySelector("h1").innerHTML = "<h1>hi</h1>";
+
+parentElement
+children
+
+It is important to cache selectors in variables!!! -> store in a variable!
+      
