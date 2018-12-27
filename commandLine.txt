@@ -18,4 +18,5 @@ rm -r folderName (works for a directory)
 // git clone + link
 // git add + fileName
 // git status
-// git commit
+// git commit -m "comment"
+// git push
