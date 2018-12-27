@@ -1,1 +1,17 @@
+// directory
+pwd: present working directory
+cd /: root directory
+cd ~: user directory 
+
+// open, create, and change name of files
+open .: open folder that we are currently in
+touch fileName: create file
+open fileName 
+open -a "Sublime Text"
+open -a "Sublime Text" fileName
+mv oldName newName: change name of file
+
+// remove file, directory
+rm fileName (only works for a file)
+rm -r folderName (works for a directory)
 
