@@ -15,9 +15,14 @@ mv oldName newName: change name of file
 rm fileName (only works for a file)
 rm -r folderName (works for a directory)
 
-// git clone + link
-// git add + fileName
-// git status
-// git commit -m "comment"
-// git push
-// git pull (pull whatever the latest)
+// git
+git clone + link
+git add + fileName / git add . 
+git status
+git commit -m "comment"
+git push
+git pull (pull whatever the latest)
+git branch branchName // create branch
+git checkout branchName  // go to branch
+git merge master // merge master to branch
+
