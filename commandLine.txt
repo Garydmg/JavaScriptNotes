@@ -15,3 +15,7 @@ mv oldName newName: change name of file
 rm fileName (only works for a file)
 rm -r folderName (works for a directory)
 
+// git clone + link
+// git add + fileName
+// git status
+// git commit
